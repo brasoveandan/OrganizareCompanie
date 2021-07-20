@@ -1,0 +1,33 @@
+utils/SQLiteDialect.java
+ utils.SQLiteDialect
+ utils.SQLiteDialect$1
+utils/HibernateSession.java
+ utils.HibernateSession
+service/Start.java
+ service.Start
+repository/CrudRepository.java
+ repository.CrudRepository
+repository/ProiectRepository.java
+ repository.ProiectRepository
+domain/Functie.java
+ domain.Functie
+domain/Departament.java
+ domain.Departament
+repository/FunctieRepository.java
+ repository.FunctieRepository
+domain/Proiect.java
+ domain.Proiect
+repository/DepartamentRepository.java
+ repository.DepartamentRepository
+repository/AngajatRepository.java
+ repository.AngajatRepository
+repository/ConcediuRepository.java
+ repository.ConcediuRepository
+service/Service.java
+ service.Service
+domain/Angajat.java
+ domain.Angajat
+domain/Concediu.java
+ domain.Concediu
+service/RestServices.java
+ service.RestServices
