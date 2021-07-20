@@ -8,7 +8,7 @@ public interface CrudRepository<T, E> {
      * @param entity entity must be not null
      * @return null- if the given entity is saved
      * otherwise returns the entity (id already exists)
-     * @throws IllegalArgumentException      if the given entity is null. *
+     * @throws IllegalArgumentException if the given entity is null. *
      */
     E save(E entity);
 
@@ -27,7 +27,7 @@ public interface CrudRepository<T, E> {
      * @return null - if the entity is updated,
      * otherwise returns the entity - (e.g id does not
      * exist).
-     * @throws IllegalArgumentException      if the given entity is null.
+     * @throws IllegalArgumentException if the given entity is null.
      */
     E update(E entity);
 

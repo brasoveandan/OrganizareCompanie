@@ -7,7 +7,7 @@ import utils.HibernateSession;
 
 import java.util.List;
 
-public class AngajatRepository implements CrudRepository<Integer, Angajat>{
+public class AngajatRepository implements CrudRepository<Integer, Angajat> {
     SessionFactory sessionFactory;
 
     public AngajatRepository() {

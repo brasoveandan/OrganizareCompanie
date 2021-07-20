@@ -25,7 +25,7 @@ public class RestServices {
 
     @GetMapping("/salar")
     public ResponseEntity<Float> calculareSalariuAngajat(@RequestBody Angajat angajat) {
-        if (angajat != null ) {
+        if (angajat != null) {
             float salar;
             int numarAni = (LocalDate.now().getYear() - angajat.getDataAngajare().getYear() + 1);
             salar = angajat.getFunctie() != null ? numarAni * angajat.getFunctie().getSalarDeBaza() : -1;
@@ -94,8 +94,7 @@ public class RestServices {
             angajatNou.setFunctie(angajatVechi.getFunctie());
             angajatRepository.update(angajatNou);
             return new ResponseEntity<>(HttpStatus.OK);
-        }
-        else return new ResponseEntity<>(HttpStatus.EXPECTATION_FAILED);
+        } else return new ResponseEntity<>(HttpStatus.EXPECTATION_FAILED);
     }
 
     @GetMapping("/angajat")

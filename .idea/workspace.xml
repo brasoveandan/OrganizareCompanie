@@ -69,16 +69,14 @@
       <recent name="service" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Start">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Gradle.ServiceTest">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -197,8 +195,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ServiceTest.asignareProiect" />
         <item itemvalue="Gradle.ServiceTest" />
+        <item itemvalue="Gradle.ServiceTest.asignareProiect" />
         <item itemvalue="Gradle.ServiceTest.calculareSalariuAngajat" />
         <item itemvalue="Gradle.ServiceTest.interschimbareAngajati" />
         <item itemvalue="Gradle.ServiceTest.proiectPerDepartament" />
@@ -214,7 +212,8 @@
       <option name="presentableId" value="Default" />
       <updated>1626710424901</updated>
       <workItem from="1626710427822" duration="16084000" />
-      <workItem from="1626758092185" duration="25075000" />
+      <workItem from="1626758092185" duration="25995000" />
+      <workItem from="1626804969836" duration="475000" />
     </task>
     <servers />
   </component>
@@ -226,7 +225,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/service/Service.java</url>
-          <line>42</line>
+          <line>41</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

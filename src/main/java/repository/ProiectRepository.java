@@ -1,6 +1,5 @@
 package repository;
 
-import domain.Angajat;
 import domain.Proiect;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -9,7 +8,7 @@ import utils.HibernateSession;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProiectRepository implements CrudRepository<Integer, Proiect>{
+public class ProiectRepository implements CrudRepository<Integer, Proiect> {
     SessionFactory sessionFactory;
 
     public ProiectRepository() {

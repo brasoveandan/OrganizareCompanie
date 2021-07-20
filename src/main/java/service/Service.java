@@ -19,13 +19,12 @@ public class Service {
     ProiectRepository proiectRepository = new ProiectRepository();
 
     public float calculareSalariuAngajat(Angajat angajat) {
-        if (angajat != null ) {
+        if (angajat != null) {
             float salar;
             int numarAni = (LocalDate.now().getYear() - angajat.getDataAngajare().getYear() + 1);
             salar = angajat.getFunctie() != null ? numarAni * angajat.getFunctie().getSalarDeBaza() : -1;
             return salar;
-        }
-        else throw new NullPointerException();
+        } else throw new NullPointerException();
     }
 
     public List<Angajat> asignareProiect(List<Angajat> angajati, Proiect proiect) {
@@ -43,8 +42,7 @@ public class Service {
                 if (concediu.getDataSfarsit().isBefore(proiect.getDataInceput()) || concediu.getDataInceput().isAfter(proiect.getDeadline())) {
                     angajatiIndisponibili.add(angajat);
                     break;
-                }
-                else {
+                } else {
                     Set<Proiect> proiecte = angajat.getProiecte();
                     proiecte.add(proiect);
                     angajat.setProiecte(proiecte);
@@ -83,7 +81,6 @@ public class Service {
             angajatNou.setDepartamente(angajatVechi.getDepartamente());
             angajatNou.setFunctie(angajatVechi.getFunctie());
             angajatRepository.update(angajatNou);
-        }
-        else throw new NullPointerException();
+        } else throw new NullPointerException();
     }
 }

@@ -7,7 +7,7 @@ import utils.HibernateSession;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConcediuRepository implements CrudRepository<Integer, Concediu>{
+public class ConcediuRepository implements CrudRepository<Integer, Concediu> {
     SessionFactory sessionFactory;
 
     public ConcediuRepository() {

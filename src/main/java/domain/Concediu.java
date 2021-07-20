@@ -5,10 +5,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Objects;
 
 @Entity
-@Table (name = "concedii")
+@Table(name = "concedii")
 public class Concediu implements Serializable {
     @Id
     @Column(name = "id")
@@ -22,7 +21,7 @@ public class Concediu implements Serializable {
     private LocalDate dataSfarsit;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="id_angajat", nullable = false)
+    @JoinColumn(name = "id_angajat", nullable = false)
     @JsonIgnore
     private Angajat angajat;
 

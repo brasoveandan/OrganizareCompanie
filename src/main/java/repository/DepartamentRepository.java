@@ -1,7 +1,5 @@
 package repository;
 
-import domain.Angajat;
-import domain.Departament;
 import domain.Departament;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -15,6 +13,7 @@ public class DepartamentRepository implements CrudRepository<Integer, Departamen
     public DepartamentRepository() {
         sessionFactory = HibernateSession.getSessionFactory();
     }
+
     @Override
     public Departament save(Departament entity) {
         return null;

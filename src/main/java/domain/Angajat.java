@@ -1,8 +1,5 @@
 package domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.hibernate.annotations.Type;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -27,22 +24,22 @@ public class Angajat implements Serializable {
     @Column(name = "data_angajare")
     private LocalDate dataAngajare;
 
-    @ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinTable(
             name = "angajati_departamente",
-            joinColumns = { @JoinColumn(name = "id_angajat") },
-            inverseJoinColumns = { @JoinColumn(name = "id_departament") }
+            joinColumns = {@JoinColumn(name = "id_angajat")},
+            inverseJoinColumns = {@JoinColumn(name = "id_departament")}
     )
     private Set<Departament> departamente = new HashSet<>();
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy="angajat")
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "angajat")
     private Set<Concediu> concedii;
 
-    @ManyToMany(cascade = {   CascadeType.PERSIST, CascadeType.MERGE })
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinTable(
             name = "angajati_proiecte",
-            joinColumns = { @JoinColumn(name = "id_angajat") },
-            inverseJoinColumns = { @JoinColumn(name = "id_proiect") }
+            joinColumns = {@JoinColumn(name = "id_angajat")},
+            inverseJoinColumns = {@JoinColumn(name = "id_proiect")}
     )
     private Set<Proiect> proiecte;
 

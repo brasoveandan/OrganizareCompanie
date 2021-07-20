@@ -7,3 +7,31 @@ V
 &src/main/java/utils/SQLiteDialect.java,1\0\1095feb193a87cb278327de9a3fda662370be32e
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
+`
+0src/main/java/repository/ConcediuRepository.java,e\e\eebf8b38e921bef29de1180ada2a503ca4ecf0cc
+P
+ src/main/java/service/Start.java,d\2\d20363515676b1e376f305dc0da8e0435ee82cfb
+c
+3src/main/java/repository/DepartamentRepository.java,8\c\8c1927556d5297ee01da6363f6662cb4997f12a5
+_
+/src/main/java/repository/FunctieRepository.java,6\4\6444ffcfd838d6a1e93b038230c78acd09cf973a
+U
+%src/main/java/domain/Departament.java,5\4\54c8029a3ecc785a64050ff4aadfe61993263ff1
+Q
+!src/main/java/domain/Functie.java,9\a\9a9152a6f8c02337a4cfab709c14fae9e3ab7112
+Q
+!src/main/java/domain/Proiect.java,7\4\74b96c63148160ba0b1f7c6ab7c55f4495bac405
+_
+/src/main/java/repository/ProiectRepository.java,e\0\e0e705f8b02a00581a05a256a88c032fae32088c
+R
+"src/main/java/domain/Concediu.java,b\e\beb2ba5a674176db3c9371e58c82728ab39907bc
+Q
+!src/main/java/domain/Angajat.java,0\9\094fa09369ab6f94cb14fc45008ab08f065f0a98
+V
+&src/test/java/service/ServiceTest.java,8\b\8bbf216e3a281e60e903f336525c27f41b2e096a
+W
+'src/main/java/service/RestServices.java,b\0\b0f4dbf91c7f96c47cc83cbfb9bb6064c6f9d233
+R
+"src/main/java/service/Service.java,c\8\c89769fe181d330c440b8bb964f3bd35c8fc8e4e
+_
+/src/main/java/repository/AngajatRepository.java,6\3\633e4068e8843daca3f1d43194e9d44a239d6133

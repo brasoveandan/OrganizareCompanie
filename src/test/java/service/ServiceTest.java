@@ -2,7 +2,6 @@ package service;
 
 import domain.Angajat;
 import domain.Departament;
-import domain.Functie;
 import domain.Proiect;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -42,14 +41,14 @@ class ServiceTest {
     void asignareProiect() {
         Proiect proiect = new Proiect();
         proiect.setId(0);
-        proiect.setDataInceput(LocalDate.of(2021,6, 15));
-        proiect.setDeadline(LocalDate.of(2021,6, 30));
+        proiect.setDataInceput(LocalDate.of(2021, 6, 15));
+        proiect.setDeadline(LocalDate.of(2021, 6, 30));
         List<Angajat> angajati = new ArrayList<>();
-        angajati.add(angajatRepository.findOne(1));
-        int nrProiecte = angajatRepository.findOne(1).getProiecte().size();
-        assertEquals(0, angajatRepository.findOne(1).getConcedii().size());
+        angajati.add(angajatRepository.findOne(2));
+        int nrProiecte = angajatRepository.findOne(2).getProiecte().size();
+        assertEquals(0, angajatRepository.findOne(2).getConcedii().size());
         assertEquals(0, service.asignareProiect(angajati, proiect).size());
-        assertEquals(nrProiecte + 1, angajatRepository.findOne(1).getProiecte().size());
+        assertEquals(nrProiecte + 1, angajatRepository.findOne(2).getProiecte().size());
     }
 
     @Test
@@ -67,9 +66,9 @@ class ServiceTest {
     @Test
     void interschimbareAngajati() {
         Angajat angajatNou = new Angajat();
-        angajatNou.setDataAngajare(LocalDate.of(2021,6, 1));
+        angajatNou.setDataAngajare(LocalDate.of(2021, 6, 1));
         Angajat angajatVechi = angajatRepository.findOne(1);
         service.interschimbareAngajati(angajatVechi, angajatNou);
-        assertEquals(LocalDate.of(2021,6, 1), angajatRepository.findOne(1).getDataAngajare());
+        assertEquals(LocalDate.of(2021, 6, 1), angajatRepository.findOne(1).getDataAngajare());
     }
 }
